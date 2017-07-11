@@ -16,6 +16,7 @@
 }
 
 .main-nav {
+  float: right;
   padding: 0.1em;
 }
 
@@ -38,6 +39,11 @@
   display: inline-block;
 }
 
+.clearfix::after {
+  content:"";
+  display:table;
+  clear:both;
+}
 #filters {
   padding: 0;
   list-style: none;
