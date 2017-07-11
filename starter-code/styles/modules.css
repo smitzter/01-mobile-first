@@ -11,6 +11,7 @@
 /* TODO: Add styles for the icon-menu class. It should be bigger, and off to the right. */
 
 .main-nav {
+  float: right;
   padding: 0.1em;
 }
 
@@ -32,6 +33,11 @@
   border-bottom: 1px solid #ccc;
 }
 
+.clearfix::after {
+  content:"";
+  display:table;
+  clear:both;
+}
 #filters {
   padding: 0;
   list-style: none;
